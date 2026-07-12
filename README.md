@@ -24,9 +24,9 @@ I am currently learning C++ and building projects to improve my understanding of
 - ✅ Loops (for, while, do-while)
 - ✅ Functions
 - ✅ Strings
-- 🔄 Arrays
-- ⏳ Pointers
-- ⏳ Object-Oriented Programming
+- ✅ Arrays
+- ✅ Pointers
+- ✅ Object-Oriented Programming
 - ⏳ Data Structures & Algorithms
 
 ---
