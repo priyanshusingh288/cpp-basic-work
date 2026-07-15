@@ -100,7 +100,7 @@ g++ filename.cpp -o program
 | Loops | ✅ Completed |
 | Functions | ✅ Completed |
 | Strings | ✅ Completed |
-| Arrays | 🔄 In Progress |
+| Arrays | ✅ In Progress |
 | OOP | ⏳ Upcoming |
 | DSA | ⏳ Upcoming |
 
