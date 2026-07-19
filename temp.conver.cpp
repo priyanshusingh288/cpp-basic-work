@@ -7,19 +7,19 @@ void fahrenheit(double fahrenheit);
 int main(){
     double temp;
     char term;
-    cout<<"enter the tempreature: ";
+    cout<<"enter the tempreature in celsius or fahrenheit: ";
     cin>>temp;
     cout<<"select conversion in c or f"<<'\n';
     cin>>term;
     if(term == 'c'){
-        celsius(temp);
+        celsius(temp); //calling down the function here 
     }
     else if(term == 'f'){
         fahrenheit(temp);
 
     }
     else{
-        cout<<"enter valid input:";
+        cout<<"enter valid input:";  //caaling the function of conversion to celsius
     }
 
     return 0;
