@@ -101,7 +101,7 @@ g++ filename.cpp -o program
 | Functions | ✅ Completed |
 | Strings | ✅ Completed |
 | Arrays | ✅ In Progress |
-| OOP | ⏳ Upcoming |
+| OOP | ✅ Upcoming |
 | DSA | ⏳ Upcoming |
 
 ---
