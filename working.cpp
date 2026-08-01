@@ -7,23 +7,23 @@ using namespace std;
 
 class Todolist{
     private:
-    vector<string> task;
+    vector<string> tasks;
     
     public:
     void add(const string& task){
-        tasks.pushback(task);
+        tasks.push_back(task);
         cout<<"Task has been succesfully added: "<<endl;
     }
 
-    void update(int index,const string& newtask){
-        if(index >= 0 && index <task.size()){
-            task[index] = newtask;
-            cout<<"Task has been updated succesfully: "<<endl;
-        }
-        else{
-            cout<<"please enter valid choice: "<<endl;
+    void update(int index, const string& newTask) {
+        if (index >= 0 && index < tasks.size()) {
+            tasks[index] = newTask;
+            cout << "Task updated successfully!" << endl;
+        } else {
+            cout << "Invalid task number!" << endl;
         }
     }
+
 
     void display() const{
         if(tasks.empty()){
@@ -39,7 +39,6 @@ class Todolist{
     }
 
     void deleteTask(int index){
-         void deleteTask(int index) {
         if (index >= 0 && index < tasks.size()) {
             tasks.erase(tasks.begin() + index);
             cout << "Task deleted successfully!" << endl;
@@ -47,7 +46,7 @@ class Todolist{
             cout << "Invalid task number!" << endl;
         }
     }
-    }
+    
 
     int getSize() const {
         return tasks.size();
@@ -76,7 +75,7 @@ int main(){
         
         if(!(cin >> choice)){
             clearInput();
-            cout<<"-- INVALID CHOICE/INVALID INPUT :("<<endl;
+            cout<<"-- INVALID CHOICE/INVALID INPUT-- :("<<endl;
             continue;
         }
         clearInput();
@@ -84,7 +83,7 @@ int main(){
         switch(choice){
 
             case 1:
-            cout<<"enter task description: "<<endl;
+            cout<<"enter task description: ";
             getline(cin,task_description);
             if(!task_description.empty()){
                 mytodo.add(task_description);
@@ -95,7 +94,42 @@ int main(){
             break;
 
             case 2:
-            
+            mytodo.display();
+            cout<<"enter the task to update: ";
+            if(cin>>index){
+                clearInput();
+                cout<<"enter the new task: ";
+                mytodo.update(index-1,task_description);
+            }
+            else{
+                cout<<"invalid input :"<<'\n';
+            }
+            break;
+
+            case 3:
+            mytodo.display();
+            cout<<"enter the task to delete: "<<endl;
+            if(cin>>index){
+                clearInput();
+                mytodo.deleteTask(index-1);
+
+            }else{
+                cout<<"invalid input : "<<'\n';
+            }
+            break;
+
+            case 4:
+            mytodo.display();
+            break;
+
+            case 5:
+              cout<<"closing the program byee!!"<<endl;
+              return 0;
+            break;
+
+            default:
+            cout<<"invalid choice : "<<endl;
+
         }
     }
     return 0;
