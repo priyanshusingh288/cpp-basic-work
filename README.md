@@ -4,7 +4,7 @@ Built multiple C++ console applications including a calculator, temperature conv
 
 Welcome to my C++ learning repository!
 
-This repository documents my journey of learning C++ programming from the fundamentals to advanced concepts. It contains practice programs, mini-projects, and exercises that help me strengthen my problem-solving skills and programming logic.
+This repository documents my journey of learning C++ programming from the fundamentals to advanced concepts. It contains practice programs, mini-projects, and exercises that help me strengthen my problem-solving skills and programming logic throughout will cover the rest topics.
 
 ---
 
