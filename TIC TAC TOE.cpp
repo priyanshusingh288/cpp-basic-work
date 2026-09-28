@@ -1,7 +1,6 @@
 #include<iostream>
 #include<ctime>
 using namespace std;
-
 void drawboard(char *spaces);
 void playermove(char *spaces,char player);
 void computermove(char *spaces,char computer);
