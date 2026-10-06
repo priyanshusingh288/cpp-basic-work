@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// Node structure
+
 class Node {
 public:
     int data;
@@ -16,10 +16,10 @@ public:
 
 bool search(Node* root, int key) {
  
-    // root is null -> return false
+    
     if (root == nullptr) return false;
 
-    // if root has key -> return true
+    
     if (root->data == key) return true;
 
     if (key > root->data) 
